@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — [Your App Name]</title>
+  <meta name="description" content="Privacy Policy for Dual N-back challenge. Data is stored locally on your device." />
+  <meta name="robots" content="index,follow" />
+  <!-- Optional: set this to your final URL once live -->
+  <!-- <link rel="canonical" href="https://yourdomain.com/privacy" /> -->
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#101826;
+      --text:#e6edf3;
+      --muted:#9fb0c0;
+      --link:#7dd3fc;
+      --border:rgba(255,255,255,.10);
+      --shadow:0 16px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 920px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f8fb;
+        --card:#ffffff;
+        --text:#0b1220;
+        --muted:#4b6075;
+        --link:#0369a1;
+        --border:rgba(0,0,0,.10);
+        --shadow:0 14px 30px rgba(0,0,0,.10);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(900px 600px at 20% 0%, rgba(125,211,252,.18), transparent 60%),
+                  radial-gradient(900px 600px at 80% 20%, rgba(167,139,250,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      margin: 10px 0 18px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      min-width: 260px;
+    }
+    .logo{
+      width:42px; height:42px;
+      border-radius:12px;
+      background: linear-gradient(135deg, rgba(125,211,252,.95), rgba(167,139,250,.95));
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    h1{
+      font-size: 1.45rem;
+      margin:0;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-end;
+      margin-top: 4px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    .pill{
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: rgba(255,255,255,.03);
+    }
+    main{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.02);
+    }
+    nav a{
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      color: var(--text);
+      opacity:.92;
+    }
+    nav a:hover{
+      border-color: var(--border);
+      text-decoration:none;
+    }
+    .content{
+      padding: 18px 18px 22px;
+    }
+    section{
+      padding: 12px 0 4px;
+      border-bottom: 1px dashed var(--border);
+    }
+    section:last-child{border-bottom:none}
+    h2{
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+    }
+    p{margin: 8px 0}
+    ul{margin: 8px 0 10px 18px}
+    li{margin: 6px 0}
+    code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size:.95em;
+      padding:.1em .35em;
+      border-radius:8px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+    }
+    .callout{
+      margin: 10px 0 6px;
+      padding: 12px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(125,211,252,.08);
+    }
+    footer{
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: .92rem;
+      text-align:center;
+    }
+    .small{
+      color: var(--muted);
+      font-size: .95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Privacy Policy</h1>
+          <div class="subtitle">for <strong>[Your App Name]</strong></div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <span class="pill">Last updated: <strong>[Month Day, Year]</strong></span>
+        <span class="pill">Developer: <strong>[Your Name / Company]</strong></span>
+        <span class="pill">Contact: <a href="mailto:[your-email@example.com]">[your-email@example.com]</a></span>
+      </div>
+    </header>
+
+    <main>
+      <nav aria-label="On this page">
+        <a href="#summary">Summary</a>
+        <a href="#data">Data we collect</a>
+        <a href="#local">Local-only storage</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#retention">Retention</a>
+        <a href="#security">Security</a>
+        <a href="#children">Children</a>
+        <a href="#changes">Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="content">
+        <section id="summary">
+          <h2>Summary</h2>
+          <div class="callout">
+            <p><strong>[Your App Name]</strong> stores your app data <strong>locally on your device</strong>. We do not run analytics, we do not show ads, and we do not sell your information.</p>
+          </div>
+          <p class="small">
+            This Privacy Policy explains what information (if any) is collected when you use the App and how it is handled.
+          </p>
+        </section>
+
+        <section id="data">
+          <h2>Data we collect</h2>
+          <p><strong>We do not collect personal data</strong> from you through the App.</p>
+          <ul>
+            <li>No account creation, no login, and no user profiles.</li>
+            <li>No advertising identifiers.</li>
+            <li>No third-party analytics or tracking SDKs.</li>
+            <li>No payment or billing information (we are not charging for the App at this time).</li>
+          </ul>
+          <p class="small">
+            If you contact us by email, we’ll receive your email address and the contents of your message so we can respond.
+          </p>
+        </section>
+
+        <section id="local">
+          <h2>Local-only storage</h2>
+          <p>
+            The App’s data is stored <strong>on your device</strong>. We do not upload your app data to our servers because we currently do not operate backend storage for the App.
+          </p>
+          <p class="small">
+            Note: Your device or operating system may provide its own backup features (for example device backups). Those are controlled by you and your platform provider, not by us.
+          </p>
+        </section>
+
+        <section id="sharing">
+          <h2>Sharing of information</h2>
+          <p>
+            We do not share your app data with third parties because we do not collect it.
+          </p>
+          <p class="small">
+            We may disclose information if required to comply with applicable law, a lawful request, or to protect our rights and users’ safety (for example, responding to valid legal process).
+          </p>
+        </section>
+
+        <section id="permissions">
+          <h2>App permissions</h2>
+          <p>
+            The App may request device permissions only to enable features you choose to use. Any data accessed via permissions stays on your device unless you explicitly export or share it.
+          </p>
+          <ul>
+            <li><strong>[Optional]</strong> Photos/Files: to let you pick or save content.</li>
+            <li><strong>[Optional]</strong> Notifications: to remind you of things in the App.</li>
+            <li><strong>[Optional]</strong> Camera/Microphone: to enable capture features.</li>
+            <li><strong>[Optional]</strong> Location: only if the App needs it for a feature you use.</li>
+          </ul>
+          <p class="small">
+            You can manage permissions any time in <code>Settings</code> on your device.
+          </p>
+        </section>
+
+        <section id="retention">
+          <h2>Data retention and deletion</h2>
+          <p>
+            Because app data is stored locally on your device, you control retention:
+          </p>
+          <ul>
+            <li>You can delete data within the App (if the App offers a delete/reset option).</li>
+            <li>You can remove the App from your device to delete its locally stored data (subject to how your device backups work).</li>
+          </ul>
+        </section>
+
+        <section id="security">
+          <h2>Security</h2>
+          <p>
+            We design the App so your data remains on-device. No method of storage is perfectly secure, but keeping data local reduces exposure.
+          </p>
+        </section>
+
+        <section id="children">
+          <h2>Children’s privacy</h2>
+          <p>
+            The App is not intended for children under <strong>[13/16]</strong>. We do not knowingly collect personal information from children.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h2>Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy as the App evolves (for example, if we add optional cloud sync, subscriptions, or analytics).
+            When we update it, we’ll revise the <strong>Last updated</strong> date at the top of this page.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            If you have questions about this Privacy Policy, contact:
+            <strong>[Your Name / Company]</strong> at
+            <a href="mailto:[your-email@example.com]">[your-email@example.com]</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="y"></span> [Your Name / Company]. All rights reserved.</p>
+      <p class="small">Tip: Use this page as your app’s “Privacy Policy URL”.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Auto-fill current year in footer
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
